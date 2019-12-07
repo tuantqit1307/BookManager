@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/signup"
+        />
+    <TextView
+        android:id="@+id/txtCreate"
+        android:text="TẠO TÀI KHOẢN"
+        android:fontFamily="@font/nunitosemibold"
+        android:gravity="center"
+
+        android:textColor="#59474b"
+        android:layout_marginBottom="15dp"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:textSize="24sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+
+    <EditText
+        android:id="@+id/edUsername"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:text="admin"
+        android:inputType="text"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/edt_login"
+        android:fontFamily="@font/nunitosemibold"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtCreate"
+        android:hint="Tên đăng nhập"
+        android:gravity="left"
+        android:textSize="20sp"
+        android:padding="10dp"/>
+    <EditText
+        android:id="@+id/edPhone"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:inputType="phone"
+        android:text="0386161113"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/edt_login"
+        android:fontFamily="@font/nunitosemibold"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edUsername"
+        android:hint="Số điện thoại"
+        android:gravity="left"
+        android:textSize="20sp"
+        android:padding="10dp"/>
+    <EditText
+        android:id="@+id/edPassword"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:inputType="textPassword"
+        android:layout_marginBottom="5dp"
+        android:text="admin"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/edt_login"
+        android:fontFamily="@font/nunitosemibold"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edPhone"
+        android:hint="Mật khẩu"
+        android:gravity="left"
+        android:textSize="20sp"
+        android:padding="10dp"/>
+    <EditText
+        android:id="@+id/edConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:inputType="textPassword"
+        android:text="admin"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/edt_login"
+        android:fontFamily="@font/nunitosemibold"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@+id/edPassword"
+        android:hint="Nhập lại mật khẩu"
+        android:gravity="left"
+        android:textSize="20sp"
+        android:padding="10dp"/>
+    <EditText
+        android:id="@+id/edFullName"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:inputType="text"
+        android:text="Trần Quốc Tuấn"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/edt_login"
+        android:fontFamily="@font/nunitosemibold"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edConfirmPassword"
+        android:hint="Họ và tên"
+        android:gravity="left"
+        android:textSize="20sp"
+        android:padding="10dp"/>
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/btn_login"
+        android:text="TẠO TÀI KHOẢN"
+        android:textSize="16sp"
+        android:fontFamily="@font/nunitosemibold"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/edFullName"
+        android:layout_marginTop="25dp"
+        />
+    <TextView
+        android:id="@+id/tvBackLogin"
+        android:layout_width="wrap_content"
+        android:textSize="16sp"
+        android:fontFamily="@font/nunitosemibold"
+        android:text="Trở về trang chính"
+        android:textColor="#304FFE"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/btnSignUp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

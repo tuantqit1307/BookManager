@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="Hoá Đơn Mua Hàng"
+        android:id="@+id/cart"/>
+    <item android:title="Danh sách tài khoản"
+        android:id="@+id/listUser"/>
+    <item android:title="Giới thiệu"
+        android:id="@+id/introduce"/>
+</menu>

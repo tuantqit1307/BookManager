@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="20dp"
+    android:layoutAnimation="@anim/layout_animation_right_to_left"
+    android:background="#fff"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:onClick="imgClick"
+            android:layout_margin="30dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/icon"
+            />
+        <TextView
+            android:id="@+id/txtLogin"
+            android:layout_marginBottom="20dp"
+            android:text="ĐĂNG NHẬP"
+            android:fontFamily="@font/nunitosemibold"
+            android:textColor="#59474b"
+            android:layout_below="@+id/logo"
+            android:layout_centerHorizontal="true"
+            android:textSize="24sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <EditText
+            android:id="@+id/edUsername"
+            android:layout_width="match_parent"
+            android:background="@drawable/edt_login"
+            android:text="admin"
+            android:fontFamily="@font/nunitosemibold"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtLogin"
+            android:hint="Tên tài khoản"
+            android:gravity="left"
+            android:textSize="20sp"
+            android:padding="10dp"/>
+        <EditText
+            android:id="@+id/edPassword"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/nunitosemibold"
+            android:inputType="textPassword"
+            android:background="@drawable/edt_login"
+            android:text="admin"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edUsername"
+            android:hint="Mật khẩu"
+            android:ems="8"
+            android:gravity="left"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:padding="10dp"/>
+        <TextView
+            android:id="@+id/tvHintPass"
+            android:text="Hiển thị mật khẩu"
+            android:layout_below="@+id/edPassword"
+            android:layout_marginTop="10dp"
+            android:textColor="#59474b"
+            android:textSize="20sp"
+            android:fontFamily="@font/nunitosemibold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <CheckBox
+            android:id="@+id/ckbSave"
+            android:layout_width="wrap_content"
+            android:textColor="#59474b"
+            android:text="Lưu đăng nhập!"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edPassword"
+            android:fontFamily="@font/nunitosemibold"
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_login"
+            android:text="ĐĂNG NHẬP"
+            android:fontFamily="@font/nunitosemibold"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/ckbSave"
+            android:layout_marginTop="25dp"
+            />
+        <TextView
+            android:id="@+id/tvForgot"
+            android:text="Quên mật khẩu?"
+            android:layout_below="@+id/btnLogin"
+            android:layout_marginTop="5dp"
+            android:textColor="#59474b"
+            android:layout_centerHorizontal="true"
+            android:textSize="17sp"
+            android:fontFamily="@font/nunitosemibold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Bạn chưa đăng ký? "
+                android:fontFamily="@font/nunitosemibold"
+                android:textColor="#59474b"
+                android:textSize="20sp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tvSign"
+                android:fontFamily="@font/nunitosemibold"
+                android:textColor="#0C92D1"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đăng ký ngay!"/>
+
+        </LinearLayout>
+</RelativeLayout>

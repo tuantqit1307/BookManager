@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Book Manager</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--  -->
+    <string name="khong_duoc_de_trong">Không được để trống!</string>
+    <string name="mat_khau_khong_trung">Mật khẩu chưa trùng khớp</string>
+    <string name="tao_tai_khoan_thanh_cong">Tạo tài khoản thành công!!</string>
+    <string name="sdt_ton_tai">Số điện thoại đã đăng ký\nBạn có muốn đăng nhập không?</string>
+    <string name="khoi_phuc">Khôi phục</string>
+    <string name="huy">Huỷ</string>
+    <string name="tk_ton_tai">Tài khoản đã đăng ký\nBạn có muốn đăng nhập không?</string>
+    <string name="nhap_sdt">Vui lòng nhập số điện thoại của bạn</string>
+    <string name="sdt_chua_dang_ky">Số điện thoại này chưa đăng ký.</string>
+    <string name="sdt">Số điện thoại: </string>
+    <string name="thoat">Thoát</string>
+    <string name="mk">Mật khẩu: </string>
+    <string name="thay_doi_mk">Thay đổi mật khẩu thành công!</string>
+    <string name="mk_khong_dung">Mật khẩu không đúng</string>
+    <string name="nhap_tk_va_mk">Vui lòng nhập tài khoản/mật khẩu</string>
+    <string name="dang_ky">Đăng ký</string>
+    <string name="dang_nhap">Đăng nhập</string>
+    <string name="thu_lai">Thử lại</string>
+    <string name="dang_ky_thanh_cong">Đăng nhập thành công</string>
+    <string name="sai_tk_mk">Sai tài khoản/mật khẩu\nBạn có muốn đăng ký không?</string>
+    <string name="ban_chua_chon_hinh">Bạn chưa chọn hình!</string>
+    <string name="them_thanh_cong">Thêm thành công</string>
+    <string name="ma_sach_ton_tai">Mã sách này đã tồn tại Vui lòng kiểm tra lại</string>
+    <string name="kiem_tra">Kiểm tra</string>
+    <string name="hello">Xin chào!</string>
+    <string name="dang_xuat_khong">Bạn có muốn đăng xuất không?</string>
+    <string name="dang_xuat">Đăng xuất</string>
+    <string name="dang_xuat_thanh_cong">Đăng xuất thành công</string>
+    <string name="thoat_app">Bạn có muốn thoát không?</string>
+    <string name="vui_long_dang_nhap">Vui lòng đăng nhập</string>
+    <string name="cap_quyen_app">Vui lòng cấp quyền ứng dụng</string>
+    <string name="link_web">bookstore.com.vn</string>
+    <string name="title_toolbar">BOOK STORE™</string>
+    <string name="xoa_thanh_cong">Xoá thành công</string>
+    <string name="ban_co_muon_xoa">Bạn có muốn xoá sách này không?</string>
+    <string name="xoa">Xoá</string>
+    <string name="channel_name">1</string>
+    <string name="channel_description">2</string>
+    <string name="gio_hang_rong">Giỏ hàng của bạn đang rỗng</string>
+    <string name="quay_lai">Quay lại</string>
+</resources>

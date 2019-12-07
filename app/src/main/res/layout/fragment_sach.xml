@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6AB9B3B3"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.SachFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/searchBook"
+        android:layout_width="match_parent"
+        android:drawableLeft="@drawable/ic_search_black_24dp"
+        android:padding="10dp"
+        android:hint="Tìm kiếm"
+        android:fontFamily="@font/nunitosemibold"
+        android:layout_margin="16dp"
+        android:paddingLeft="8dp"
+        android:background="@drawable/edt_login"
+        android:layout_height="wrap_content">
+    </EditText>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_book"
+        android:layout_width="match_parent"
+        android:layout_marginRight="16dp"
+        android:layoutAnimation="@anim/layout_animation_right_to_up"
+        android:layout_marginLeft="16dp"
+        android:layout_below="@+id/searchBook"
+        android:layout_height="match_parent"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:id="@+id/addBook"
+        android:layout_height="wrap_content"
+        app:backgroundTint="#2962FF"
+        app:elevation="5dp"
+        android:elevation="5dp"
+        android:src="@drawable/ic_addbook"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"/>
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

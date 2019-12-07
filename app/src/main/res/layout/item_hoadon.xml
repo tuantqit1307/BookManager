@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:elevation="5dp"
+    android:padding="10dp"
+    android:background="#0D646464"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/imgID"
+        android:layout_width="48dp"
+        android:background="@drawable/ic_hd"
+        android:layout_height="48dp"/>
+    <TextView
+        android:id="@+id/tvHD"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_toRightOf="@id/imgID"
+        android:fontFamily="@font/nunitosemibold"
+        android:paddingLeft="10dp"
+        android:gravity="center_vertical"
+        android:drawableLeft="@drawable/ic_amount"
+        android:text=" Mã HD: 1231241241281"
+        android:textColor="#DD2C00"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:drawableLeft="@drawable/ic_time"
+        android:layout_below="@+id/tvHD"
+        android:layout_toRightOf="@id/imgID"
+        android:fontFamily="@font/nunitosemibold"
+        android:paddingLeft="10dp"
+        android:gravity="center_vertical"
+        android:text=" Ngày tạo: 26-09-2018"
+        android:textColor="#DD2C00"
+        android:textSize="14sp" />
+    <Button
+        android:id="@+id/btnDelHoaDon"
+        android:elevation="5dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/background_statistics2"
+        android:layout_width="64dp"
+        android:text="XOÁ"
+        android:layout_below="@+id/tvHD"
+        android:textColor="#FFF"
+        android:layout_height="24dp"/>
+</RelativeLayout>

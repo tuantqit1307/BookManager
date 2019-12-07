@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/theLoai"
+            android:icon="@drawable/ic_theloai"
+            android:title="Thể Loại" />
+        <item
+            android:id="@+id/book"
+            android:icon="@drawable/ic_book"
+            android:title="Sách" />
+        <item
+            android:id="@+id/hoaDon"
+            android:icon="@drawable/ic_hoadon"
+            android:title="Hóa Đơn" />
+        <item
+            android:id="@+id/thongKe"
+            android:icon="@drawable/ic_thongke"
+            android:title="Thống Kê" />
+    </group>
+    <item android:title="Tài khoản"
+        app:showAsAction="collapseActionView">
+        <menu>
+            <item android:id="@+id/doiMk"
+                android:icon="@drawable/ic_changepass"
+                android:title="Đổi mật khẩu" />
+            <item android:id="@+id/dangXuat"
+                android:icon="@drawable/ic_signout"
+                android:title="Đăng xuất" />
+            <item android:id="@+id/thoat"
+                android:icon="@drawable/ic_exit"
+                android:title="Thoát" />
+        </menu>
+    </item>
+</menu>

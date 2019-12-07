@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#2962FF"
+    android:orientation="vertical"
+    android:elevation="5dp"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="Book Manager"
+        android:paddingTop="16dp"
+        app:srcCompat="@drawable/icon" />
+
+    <TextView
+        android:id="@+id/infoLogin"
+        android:layout_below="@+id/imageView"
+        android:layout_width="match_parent"
+        android:textColor="#FFFFFF"
+        android:drawableLeft="@drawable/ic_signout"
+        android:layout_height="wrap_content"
+        android:text="Xin chào! admin"
+        android:textStyle="bold"
+        android:textAppearance="@style/aaa" />
+
+    <TextView
+        android:id="@+id/infoPhone"
+        android:layout_below="@+id/infoLogin"
+        android:layout_width="wrap_content"
+        android:drawableLeft="@drawable/ic_phone"
+        android:textAppearance="@style/aaa"
+        android:textColor="#FFFFFF"
+        android:layout_height="wrap_content"
+        android:text="0985557268" />
+
+</RelativeLayout>

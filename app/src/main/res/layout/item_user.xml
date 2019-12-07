@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_margin="3dp"
+    android:elevation="5dp"
+    android:background="#4FC9C9C9"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/idImageUser"
+        android:layout_width="56dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/user"
+        android:layout_height="56dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/idImageUser"
+        android:layout_height="56dp">
+
+        <TextView
+            android:id="@+id/idNameUser"
+            android:paddingLeft="10dp"
+            android:drawableLeft="@drawable/ic_verified"
+            android:layout_width="match_parent"
+            android:textColor="#5E42FF"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text=" Họ và tên: "/>
+        <TextView
+            android:id="@+id/idUsername"
+            android:drawableLeft="@drawable/ic_account"
+            android:paddingLeft="10dp"
+            android:textColor="#5E42FF"
+            android:textStyle="bold"
+            android:layout_below="@+id/idNameUser"
+            android:layout_toRightOf="@id/idImageUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Username:  "/>
+        <TextView
+            android:id="@+id/idPhoneUser"
+            android:paddingLeft="10dp"
+            android:textColor="#5E42FF"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/ic_phone"
+            android:layout_below="@+id/idUsername"
+            android:layout_toRightOf="@id/idImageUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Phone:  "/>
+
+
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/imgOthers"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:background="@drawable/ic_view"/>
+</RelativeLayout>

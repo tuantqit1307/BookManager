@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:elevation="5dp"
+    android:layout_marginBottom="2dp"
+    android:layout_marginTop="2dp"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imgItemBuy"
+        android:layout_width="16dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/ic_beenhere"
+        android:layout_height="16dp"/>
+
+    <TextView
+        android:id="@+id/nameItemBuy"
+        android:layout_toRightOf="@id/imgItemBuy"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_height="30dp"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/nunitosemibold"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:text="Cho Đi Đừng Nhận Lại" />
+
+    <TextView
+        android:id="@+id/amountItemBuy"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@+id/nameItemBuy"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_toRightOf="@id/imgItemBuy"
+        android:fontFamily="@font/nunitosemibold"
+        android:text="Số lượng: 2 cuốn"
+        android:textSize="14sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/priceItemBuy"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="-5dp"
+        android:layout_toRightOf="@id/amountItemBuy"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        android:layout_below="@+id/nameItemBuy"
+        android:fontFamily="@font/nunitosemibold"
+        android:text="Tổng tiền: 26.000 VND"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="16sp" />
+</RelativeLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/txtForgotPass"
+        android:text="THAY ĐỔI MẬT KHẨU"
+        android:fontFamily="@font/nunitosemibold"
+        android:gravity="center"
+        android:textColor="#59474b"
+        android:layout_centerHorizontal="true"
+        android:textSize="24sp"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <EditText
+        android:id="@+id/edPassOld"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:text="admin"
+        android:inputType="textPassword"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/edt_login"
+        android:fontFamily="@font/nunitosemibold"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtForgotPass"
+        android:hint="Nhập mật khẩu cũ"
+        android:gravity="left"
+        android:textSize="20sp"
+        android:padding="10dp"/>
+    <EditText
+        android:id="@+id/edPassNew"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:inputType="textPassword"
+        android:text="admin"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/edt_login"
+        android:fontFamily="@font/nunitosemibold"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edPassOld"
+        android:hint="Mật khẩu mới"
+        android:gravity="left"
+        android:textSize="20sp"
+        android:padding="10dp"/>
+    <EditText
+        android:id="@+id/edPassNewConfirm"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:text="admin"
+        android:inputType="textPassword"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/edt_login"
+        android:fontFamily="@font/nunitosemibold"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edPassNew"
+        android:hint="Nhập lại mật khẩu"
+        android:gravity="left"
+        android:textSize="20sp"
+        android:padding="10dp"/>
+    <Button
+        android:id="@+id/btnChangePassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/btn_login"
+        android:text="THAY ĐỔI"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/nunitosemibold"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/edPassNewConfirm"
+        android:layout_marginTop="25dp"
+        />
+    <TextView
+        android:id="@+id/tvBackLogin"
+        android:layout_width="wrap_content"
+        android:textSize="16sp"
+        android:fontFamily="@font/nunitosemibold"
+        android:text="Trở về trang chính"
+        android:textColor="#304FFE"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/btnChangePassword"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

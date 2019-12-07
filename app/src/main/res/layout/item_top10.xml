@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="2dp"
+    android:background="#304FFE"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        app:cardCornerRadius="5dp"
+        android:layout_margin="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFAB00"
+            android:padding="5dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="130dp"
+                android:src="@drawable/btn_login"
+                android:scaleType="fitXY"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/iv" />
+            <TextView
+                android:id="@+id/nameBookBuy"
+                android:layout_width="wrap_content"
+                android:gravity="center_horizontal"
+                android:textStyle="bold"
+                android:textColor="#6200EA"
+                android:layout_height="wrap_content"
+                android:text="Những cô gái trong thành phố"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/tvAmountBuy"
+                android:drawableLeft="@drawable/ic_top10"
+                android:textStyle="normal"
+                android:text="Đã bán: 02"
+                android:textColor="#EA00DE"
+                android:textSize="17sp" />
+
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

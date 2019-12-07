@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFF"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".Fragment.HoaDonFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:background="@drawable/background_bookdetails"
+            android:fontFamily="@font/nunitosemibold"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="2"
+            android:text="TẠO HOÁ ĐƠN"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvNameBook"
+        android:layout_width="match_parent"
+        android:fontFamily="@font/nunitosemibold"
+        android:textSize="20sp"
+        android:drawableLeft="@drawable/ic_amount"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tvPriceBook"
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
+        android:drawableLeft="@drawable/ic_price"
+        android:fontFamily="@font/nunitosemibold"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_marginBottom="5dp"-->
+<!--        android:layout_height="wrap_content">-->
+<!--        <TextView-->
+<!--            android:id="@+id/txtNamePersonBuy"-->
+<!--            android:fontFamily="@font/nunitosemibold"-->
+<!--            android:textSize="20sp"-->
+<!--            android:paddingTop="5dp"-->
+<!--            android:paddingBottom="5dp"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:layout_width="100dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Họ và tên:" />-->
+<!--        <EditText-->
+<!--            android:id="@+id/edtNamePersonBuy"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:fontFamily="@font/nunitosemibold"-->
+<!--            android:textSize="20sp"-->
+<!--            android:paddingTop="5dp"-->
+<!--            android:hint="Nhập họ tên..."-->
+<!--            android:paddingBottom="5dp"-->
+<!--            android:paddingLeft="10dp"-->
+<!--            android:background="@drawable/edt_login"-->
+<!--            android:layout_toRightOf="@id/txtNamePersonBuy"-->
+<!--            android:layout_height="wrap_content"/>-->
+<!--    </RelativeLayout>-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtAmountBuy"
+            android:fontFamily="@font/nunitosemibold"
+            android:textSize="20sp"
+            android:layout_marginRight="50dp"
+            android:gravity="center_vertical"
+            android:layout_width="100dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_height="wrap_content"
+            android:text="Số lượng:" />
+       <Button
+           android:id="@+id/btnTru"
+           android:layout_width="20dp"
+           android:text="-"
+           android:layout_centerVertical="true"
+           android:paddingBottom="5dp"
+           android:paddingTop="5dp"
+           android:textSize="12sp"
+           android:background="#C03C3C"
+           android:layout_margin="5dp"
+           android:layout_toRightOf="@id/txtAmountBuy"
+           android:layout_height="20dp"/>
+        <TextView
+            android:id="@+id/tvAmount"
+            android:layout_width="50dp"
+            android:inputType="number"
+            android:layout_height="30dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/btnTru"
+            android:text="0"
+            android:gravity="center"
+            android:background="@drawable/edt_login"/>
+        <Button
+            android:id="@+id/btnCong"
+            android:layout_width="20dp"
+            android:layout_centerVertical="true"
+            android:text="+"
+            android:textSize="12sp"
+            android:background="#C03C3C"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@id/tvAmount"
+            android:layout_height="20dp"/>
+        <TextView
+            android:id="@+id/tvNumberBook"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:textSize="15sp"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="còn 7 cuốn" />
+    </RelativeLayout>
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_marginBottom="5dp"-->
+<!--        android:layout_height="wrap_content">-->
+<!--        <TextView-->
+<!--            android:id="@+id/txtAddressPersonBuy"-->
+<!--            android:fontFamily="@font/nunitosemibold"-->
+<!--            android:textSize="20sp"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:paddingTop="5dp"-->
+<!--            android:paddingBottom="5dp"-->
+<!--            android:layout_width="100dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Địa chỉ:" />-->
+<!--        <EditText-->
+<!--            android:id="@+id/edtAddressPersonBuy"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:fontFamily="@font/nunitosemibold"-->
+<!--            android:textSize="20sp"-->
+<!--            android:hint="Nhập địa chỉ"-->
+<!--            android:paddingTop="5dp"-->
+<!--            android:paddingBottom="5dp"-->
+<!--            android:paddingLeft="10dp"-->
+<!--            android:background="@drawable/edt_login"-->
+<!--            android:layout_toRightOf="@id/txtAddressPersonBuy"-->
+<!--            android:layout_height="wrap_content"/>-->
+<!--    </RelativeLayout>-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtShow"
+            android:fontFamily="@font/nunitosemibold"
+            android:textSize="20sp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:gravity="center_vertical"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Tổng tiền:" />
+        <TextView
+            android:id="@+id/tvShowPriceResult"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/nunitosemibold"
+            android:textSize="20sp"
+            android:paddingTop="5dp"
+            android:text="0 VND"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_red_dark"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:layout_toRightOf="@id/txtShow"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnCreateBuyBook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_buy"
+        android:fontFamily="@font/nunitosemibold"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="THÊM VÀO GIỎ HÀNG"
+        android:textColor="#fff" />
+
+</LinearLayout>
